@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #define MAX 80000000
 
 int prime_n(int n) {
@@ -23,5 +24,9 @@ int prime_n(int n) {
 }
 
 int main() {
+	clock_t start, end;
+	start = clock();
 	printf("%d\n", prime_n(4263116));
+	end = clock();
+	printf("%f\n", (double)(end-start)/CLOCKS_PER_SEC);
 }
