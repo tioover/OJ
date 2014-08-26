@@ -12,14 +12,17 @@ int pi(int max) {
 	//init
 	memset(p, 1, size);
 	//sieve
-	m = 1;
 	for (i = 3; i <= (int)sqrt(max)+1; i+=2) {
 		if (p[i]) {
-			m++;
 			for (j = i*2; j <= max; j+=i) {
 				p[j] = 0;
 			}
 		}
+	}
+	m = 1;
+	for (i = 3; i <= len; i+=2) {
+		if (p[i])
+			m++;
 	}
 	return m;
 }
