@@ -1,0 +1,3 @@
+# NSU OJ
+
+**OUT OF DATE**
