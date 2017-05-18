@@ -1,4 +1,4 @@
-OJ
+Ecirexe
 ==
 
-Online judge code.
+Exerice code
