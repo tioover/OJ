@@ -6,7 +6,7 @@ public:
             maxendinghere = max(maxendinghere + i, 0);
             maxsofar = max(maxsofar, maxendinghere);
         }
-        if (maxsofar == 0) { return *max_element(nums.begin(), nums.end()); }
+            if (maxsofar == 0) { return *max_element(nums.begin(), nums.end()); }
         return maxsofar;
     }
 };
